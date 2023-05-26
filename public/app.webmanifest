@@ -2,7 +2,7 @@
     "dir": "ltr",
     "display": "browser",
     "lang": "en",
-    "name": "redux-mdtp",
+    "name": "redux-thunk",
     "orientation": "landscape-primary",
     "icons": [
         {

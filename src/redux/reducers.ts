@@ -3,6 +3,7 @@ import { combineReducers } from 'redux';
 const reducers: any = combineReducers({
     authenticated,
     cars,
+    makes,
 });
 
 function authenticated(state: boolean = false, action: any): boolean {
@@ -20,6 +21,15 @@ function cars(state: Cars[] = [], action: any): Cars[] {
     switch (action.type) {
         case 'DELETE_CAR':
             return state.filter(e => e.id !== action.payload);
+    }
+
+    return state;
+}
+
+function makes(state: Makes[] = [], action: any): Makes[] {
+    switch (action.type) {
+        case 'FETCH_MAKES':
+            return action.payload;
     }
 
     return state;

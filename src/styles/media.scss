@@ -4,6 +4,10 @@
             width: calc(100% / 2);
         }
     }
+
+    .nav-link {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -35,9 +39,27 @@
         display: none;
     }
 
+    .makes {
+        button {
+            font-size: 1.5rem;
+            padding: .5rem 1rem;
+        }
+
+        ul {
+            font-size: 1rem;
+
+            li {
+                line-height: 1.5rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+
     .nav-link {
         font-size: 1.5rem;
-        margin: .5rem;
+        margin-right: .5rem;
     }
 
     .navbar {
@@ -49,6 +71,12 @@
     .details {
         h2 {
             font-size: 1rem;
+        }
+    }
+
+    .nav-link {
+        &:nth-of-type(2) {
+            display: none;
         }
     }
 }

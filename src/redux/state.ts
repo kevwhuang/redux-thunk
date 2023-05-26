@@ -5,6 +5,7 @@ import cars from '../data/data.json';
 const state: State = {
     authenticated: !!cookie.parse(document.cookie)['logged_in'],
     cars,
+    makes: [],
 };
 
 export default state;

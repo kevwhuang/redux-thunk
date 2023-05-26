@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import {
-    createBrowserRouter,
-    createRoutesFromElements,
     Route,
     RouterProvider,
+    createBrowserRouter,
+    createRoutesFromElements,
 } from 'react-router-dom';
 
 import Navbar from './layouts/Navbar';
@@ -15,10 +15,12 @@ import Details from './pages/Details';
 import Error from './pages/Error';
 import Fallback from './pages/Fallback';
 import Home from './pages/Home';
+import Import from './pages/Import';
 import Logout from './pages/Logout';
 import NotFound from './pages/NotFound';
 
 import Protect from './features/Protect';
+
 import store from './redux/store';
 
 import './styles/rectify.scss';
@@ -34,6 +36,7 @@ const router: any = createBrowserRouter(createRoutesFromElements(
         <Route path="details" element={<Protect component={Details} />}>
             <Route path=":id" />
         </Route>
+        <Route path="import" element={<Protect component={Import} />} />
         <Route path="logout" element={<Logout />} />
     </Route>
 ));

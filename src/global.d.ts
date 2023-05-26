@@ -11,7 +11,13 @@ interface Cars {
     id: number,
 }
 
+interface Makes {
+    Make_ID: number,
+    Make_Name: string,
+}
+
 interface State {
     authenticated: boolean,
     cars: Cars[],
+    makes: Makes[],
 }

@@ -14,11 +14,12 @@ function Navbar(props: any): React.ReactElement {
             <AppBar position="relative">
                 <Toolbar>
                     <Typography className="header" variant="h4" style={{ flexGrow: '1' }}>
-                        REACT ROUTER
+                        REDUX THUNK
                     </Typography>
                     <div className="navbar">
                         <Link className="nav-link" to="">Home</Link>
                         <Link className="nav-link" to="about">About</Link>
+                        <Link className="nav-link" to="import">Import</Link>
                         {props.authenticated &&
                             <Link className="nav-link" to="logout">Logout</Link>
                         }

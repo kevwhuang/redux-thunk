@@ -42,7 +42,7 @@
 
 .delete {
     border: none;
-    color: blue;
+    color: blueviolet;
     display: block;
     margin: auto;
 
@@ -69,10 +69,10 @@
 }
 
 .details-link {
-    color: blue;
+    color: blueviolet;
 
     &:visited {
-        color: blue;
+        color: blueviolet;
     }
 
     &:active {
@@ -86,13 +86,51 @@
     text-align: center;
 }
 
+.header {
+    color: #ddd;
+}
+
+.makes {
+    button {
+        background: #1876d2;
+        border-radius: 1rem;
+        color: #ddd;
+        display: block;
+        font-size: 2rem;
+        margin: 1rem auto .5rem;
+        padding: .5rem 2rem;
+        text-align: center;
+        transition: 200ms;
+
+        &:hover {
+            background: darken(#1876d2, 5%);
+            box-shadow: 0 0 8px 0 black;
+        }
+
+        &:active {
+            transform: scale(.98);
+        }
+    }
+
+    ul {
+        font-size: 1.5rem;
+        list-style-type: none;
+        margin: 0 1rem 1rem;
+
+        li {
+            line-height: 2rem;
+            text-align: center;
+        }
+    }
+}
+
 .nav-link {
-    color: white;
+    color: #ddd;
     font-size: 2rem;
     margin: 1rem;
 
     &:visited {
-        color: white;
+        color: #ddd;
     }
 
     &:active {

@@ -1,5 +1,5 @@
 {
-    "name": "redux-mdtp",
+    "name": "redux-thunk",
     "version": "1.0.0",
     "author": "Kevin Huang",
     "scripts": {
